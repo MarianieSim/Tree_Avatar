@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{D740C3C6-3AA3-9E33-312C-1BC58C2D77D7}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/grow leaves.cs">
+    <Files>
+      <File FileName="Assets/Rotate.cs" Line="14" Column="61" />
+      <File FileName="Assets/drag.cs" Line="21" Column="72" />
+      <File FileName="Assets/NewDrag.cs" Line="52" Column="6" />
+      <File FileName="Assets/rot.cs" Line="14" Column="11" />
+      <File FileName="Assets/dragcan.cs" Line="21" Column="50" />
+      <File FileName="Assets/TreeGrow.cs" Line="6" Column="1" />
+      <File FileName="Assets/grow leaves.cs" Line="56" Column="2" />
+      <File FileName="Assets/leaves.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
