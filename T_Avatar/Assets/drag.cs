@@ -18,7 +18,7 @@ public class drag : MonoBehaviour {
 
 	private void OnMouseUp()
 	{
-        transform.position = new Vector3((float)-1.9225, (float)4.84155, (float)-4.64);
+        transform.position = new Vector3((float)-1.9225, (float)0.84155, (float)-4.64);
 	}
 
 	

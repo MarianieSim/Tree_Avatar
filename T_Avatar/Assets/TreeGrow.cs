@@ -14,21 +14,28 @@ public class TreeGrow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
         tempScale = transform.localScale;
-        if(transform.localScale.x < maxGrowth)
+        if (transform.localScale.x < maxGrowth)
         {
             tempScale.x += speedGrowth;
-            tempScale.y  += speedGrowth * 2;
+            tempScale.y += speedGrowth * 2;
             tempScale.z += speedGrowth;
             transform.localScale = tempScale;
         }
-        else
-        {
-            ready = true;
-        }
+       
+       // else
+       // {
+       //     ready = true;
+       // }
 	}
 
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "can")
+
+            print("Got it");
+
+    }
 
 }
 

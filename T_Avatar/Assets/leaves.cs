@@ -8,24 +8,6 @@ public class leaves : MonoBehaviour {
     public float speedGrowth = 0.0001f;
     Vector3 tempScale;
     public Tree TestTreeObject;
-    public GameObject targetObject;
-
-    private bool hideObject;
-    // Use this for initialization
-
-    void Start()
-    {
-        targetObject.SetActive(false);
-        StartCoroutine(Example());
-    }
-
-    IEnumerator Example()
-    {
-      
-        yield return new WaitForSecondsRealtime(20);
-        targetObject.SetActive(true);
-    }
-
 
 
 
