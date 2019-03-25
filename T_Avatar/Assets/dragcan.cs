@@ -21,12 +21,12 @@ public class dragcan : MonoBehaviour {
         transform.position = new Vector3((float) -1.922532, (float)2.84155, (float)-4.54);
     }
 
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.name == "Tree 2")
+	private void OnTriggerEnter(Collider other)
+	{
+        if (other.gameObject.name == "Tree 2")
         {
             print("Touch");
         }
-    }
-
+	}
+	
 }

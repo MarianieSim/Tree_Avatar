@@ -29,21 +29,24 @@ public class growleaves : MonoBehaviour {
 
 
 
- 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "can")
+        {
+            tempScale = transform.localScale;
+            if (transform.localScale.x < maxGrowth)
+            {
+                tempScale.x += speedGrowth;
+                tempScale.y += speedGrowth * 2;
+                tempScale.z += speedGrowth;
+                transform.localScale = tempScale;
+            }
+        }
+    }
  
 // Update is called once per frame
 void Update()
 {
-
-    tempScale = transform.localScale;
-    if (transform.localScale.x < maxGrowth)
-    {
-        tempScale.x += speedGrowth;
-        tempScale.y += speedGrowth * 2;
-        tempScale.z += speedGrowth;
-        transform.localScale = tempScale;
-    }
-
 
     if (hideObject)
         {
