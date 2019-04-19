@@ -19,14 +19,25 @@ public class dragcan : MonoBehaviour {
     private void OnMouseUp()
     {
         transform.position = new Vector3((float) -1.922532, (float)2.84155, (float)-4.54);
+       
     }
 
-	private void OnTriggerEnter(Collider other)
-	{
-        if (other.gameObject.name == "Tree 2")
-        {
-            print("Touch");
-        }
-	}
 	
+    private void OnMouseDown()
+    {
+        if (Wcount.text > 0)
+        {
+            GrowTree.count++;
+            Wcount.text--;
+
+        }
+        else
+        {
+            waterPopup.open();
+        }
+
+       
+       
+    }
+
 }

@@ -19,8 +19,24 @@ public class drag : MonoBehaviour {
 	private void OnMouseUp()
 	{
         transform.position = new Vector3((float)-1.9225, (float)0.84155, (float)-4.64);
+       
 	}
 
-	
+    private void OnMouseDown()
+    {
+        if(Fcount.text > 0)
+        {
+            GrowTree.count++;
+            Fcount.text--;
+            
+        }
+        else
+        {
+            FertPopup.open();
+        }
+
+
+    }
+
 
 }
